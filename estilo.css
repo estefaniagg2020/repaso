@@ -3,6 +3,24 @@
     border: 1px solid black;
     margin: 10px auto;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 h1{
     text-align: center;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-self: center;
+    justify-items: center;
+   
+   
+} 
+li{
+   
+    list-style: none;
+   
+    
 }
