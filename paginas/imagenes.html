@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilo.css" />
+    <link rel="stylesheet" href="../estilos/estilo-imagenes.css" />
+    <!-- _Iconos -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+  </head>
+  <body id="body">
+    <div class="contenedor">
+      <div class="icono-arriba">
+        <a href="#body" class="icono-arriba"><i class="fas fa-3x fa-arrow-alt-circle-up "></i></a>
+      </div>
+        <a href="../index.html"><i class="fas fa-3x fa-arrow-circle-left"></i></a>
+      <h1>Imagenes</h1>
+      <section class="teoria">
+        <h2>Tipos de imagenes</h2>
+        <p>Link pagina pedro: <a href=""></a></p>
+        <h3>Mapas de bits (raster)</h3>
+        <p>
+          - Son imágenes compuestas por píxeles. Son las captadas por las
+          cámaras o creadas por programas de edición.
+        </p>
+        <h3>Vectoriales</h3>
+        <p>
+          Son imágenes que muestran su información mediante descripciones
+          matemáticas. Están creadas exclusivamente por programas de edición.
+        </p>
+        <h2>Cambio de resolucion</h2>
+        <p>
+          La imagen siempre ocupa el mismo ancho. Con "srcset" damos opciones al
+          navegador para que elija segun la resolucion.
+        </p>
+        &lt;img alt="Imagen"
+        <strong>src="imagen_450.jpg"</strong>
+        <i class="fas fa-arrow-right"></i> (indicamos imagen por defecto)
+        <strong>srcset=</strong>"<i class="fas fa-arrow-right"></i>(Decimos qué
+        imagen segun qué resolucion de pantalla) imagen_450.jpg 450w,
+        imagen_850.jpg 850w, imagen_1400.jpg 1400w " /&gt;
+
+        <h2>Cambio de resolucion distintos tamaños de imagen</h2>
+        <p>Necesitamos media queris</p><p>
+            El atributo sizes es un orientador para el navegador. Le decimos que
+            para un ancho minimo de 768 use 50vw, para lo demas 100vw(100%)
+          </p>
+
+        <div class="picture">
+            &lt;img alt="Imagen" <br>&nbsp;&nbsp; &nbsp;&nbsp; src="imagen_450.jpg" <br> &nbsp;&nbsp; &nbsp;&nbsp;srcset=" imagen_450.jpg 450w,
+            imagen_850.jpg 850w, imagen_1400.jpg 1400w "&nbsp;&nbsp; &nbsp;&nbsp; sizes="(min-width: 768px)
+            50vw, 100vw" /&gt;
+            
+            <p>
+              Código mediaquery:<br />
+              @media (min-width: 768px) {<br />
+              &nbsp;&nbsp; &nbsp;&nbsp;img {<br />
+              &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; width:50vw;<br />
+              &nbsp;&nbsp; &nbsp;&nbsp; }<br />
+              }
+        </div><br />
+        </p>
+        <h2>Dirección de arte</h2>
+        <p>Diferente version de la imagen, segun dispositivos.</p>
+       <div class="picture">
+            &lt;picture&gt;<br />
+            &nbsp;&nbsp;&nbsp; &lt;source media="(min-width: 768px)"
+            srcset="img_wide.jpg"&gt;<br />
+            &nbsp;&nbsp; &nbsp;&nbsp;&lt;source srcset="img_mobile.jpg"&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="img_mobile.jpg"
+            alt="Imagen"&gt;<br />
+            &lt;/picture&gt;
+       </div>
+        <p>Source media: define el archivo que se debe usar segun el ancho minimo. srcset = la ruta</p>
+        <p>Source + srcet: define el archivo que se debe usar en el resto de los casos</p>
+        <p>Img establece la imagen por defecto, cuando no se cumpla la condición.</p>
+        <h2>Videos</h2>
+        <p>El atributo controls especifica que se deben mostrar los controles del video</p>
+        <p>El navegador intenta mostrarlos en orden descendente</p>
+        <div class="picture">
+            
+            &lt;video width="320" height="240" controls&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &lt;source src="video.mp4" type="video/mp4"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &lt;source src="video.ogg" type="video/ogg"&gt;<br>
+                El navegador no soporta la etiqueta video.
+              &lt;/video&gt;
+
+        </div>
+      <section class="practica"></section>
+    </div>
+  </body>
+</html>
