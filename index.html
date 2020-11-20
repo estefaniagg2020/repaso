@@ -3,12 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo.css" />
     <title>Document</title>
-    
+    <!-- icono -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
   </head>
-  <body>
+  <body id="body">
     <div class="contenedor">
+      <div class="icono-arriba">
+        <a href="#body" class="icono-arriba"
+          ><i class="fas fa-3x fa-arrow-alt-circle-up"></i
+        ></a>
+      </div>
       <h1>Repaso conceptos</h1>
       <nav>
         <ul>
@@ -24,21 +35,46 @@
           <a href="../repaso/paginas/formulario.html">
             <li>Formularios</li>
           </a>
-          <a href="">
+          <a href="../repaso/paginas/git.html">
             <li>Github</li>
-          </a>
-          <a href="">
-            <li>Medidas letra</li>
           </a>
         </ul>
       </nav>
       <!-- Sección formulario -->
-    
+
       <!-- fin seccion formulario -->
       <!-- Seccion tipos de letra -->
       <section>
         <h2>Unidades absolutas</h2>
+        <div class="imagenes">
+          <img src="images/imagen-medidas.png" alt="" />
+        </div>
         <h2>Unidades relativas</h2>
+        <div class="imagenes">
+          <img src="images/imagen-medidas-relativas.png" alt="" />
+        </div>
+        <div class="contenedor-card">
+          <div class="card">
+            <h2>Unidad Em</h2>
+            <p>
+              Esta unidad hace referencia al tamaño de letra calculado heredado
+              por el elemento. Por tanto, para calcular el valor real aplicado
+              habrá que determinar los valores que se van heredando de los
+              elementos contenedores. Si el tamaño del contenedor es de 1.2em
+              hay que calcular en funcion a ese valor.
+            </p>
+          </div>
+          <div class="card">
+            <h2>Porcentaje</h2>
+            <p>
+              El porcentaje suele tomarse como una unidad relativa más. Un
+              porcentaje de un 100% hace referencia al tamaño calculado del
+              elemento contenedor (un tamaño de un 100% en un tipo de letra hace
+              referencia al tamaño del tipo de letra aplicado en el elemento
+              contenedor)
+            </p>
+          </div>
+        </div>
       </section>
     </div>
   </body>

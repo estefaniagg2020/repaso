@@ -1,5 +1,5 @@
 .contenedor {
-  margin: 10px auto;
+  margin: 10px auto; 
   font-family: Arial, Helvetica, sans-serif;
 }
 a {
@@ -35,4 +35,41 @@ input[type="button"]
 }
 i{
   color: rgb(105, 101, 101);
+}
+.imagenes{
+ margin: 0 auto;
+  max-width: 700px;
+}
+img{
+  width: 100%;
+}
+.contenedor-card{
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+  margin-right: 5px; 
+  justify-content: center;
+ 
+}
+.card
+{
+margin-right: 25px;
+  padding: 15px;
+  width: 400px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 5px rgb(134, 132, 132);
+}
+.card h2{
+  border-bottom: 1px solid #ccc;
+}
+.pagina-pedro
+{
+ text-align: center;
+ font-size: 20px;
+ letter-spacing: 3px;
+ border-bottom: 2px solid black;
+ width: 300px;
+ margin: 10px auto;
 }

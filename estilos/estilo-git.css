@@ -1,0 +1,20 @@
+.contenido
+{
+    border: 1px solid black;
+    max-width: 960px;
+    margin: auto;
+    box-sizing: border-box;
+    font-size: 1.05em;
+   
+}
+h1{
+    text-align: center;
+}
+span{
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+.card{
+    margin-bottom: 15px;
+    background-color: rgba(204, 204, 204, 0.26);
+}
