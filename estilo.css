@@ -1,6 +1,6 @@
 .contenedor {
-  border: 1px solid black;
   margin: 10px auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 a {
   text-decoration: none;
@@ -15,16 +15,17 @@ ul {
   grid-template-columns: repeat(6, 1fr);
   align-self: center;
   justify-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 li {
   list-style: none;
 }
 .formularios {
-  margin: 0 auto;
   padding: 10px;
   border: 1px solid black;
   text-align: center;
-  max-width: 500px;
+  max-width: 650px;
 }
 
 .form-group {
@@ -34,4 +35,48 @@ li {
 label {
   display: inline-block;
   width: 80px;
+  text-align: left;
+}
+legend {
+  color: rgb(68, 67, 67);
+}
+.titulo-formulario {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.contenido-formulario {
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  align-self: center;
+ 
+}
+.formulario-css {
+  background-color: rgba(162, 214, 216, 0.521);
+  border-color: rgb(113, 145, 233);
+}
+.codigo-formulario {
+  background-color: rgba(198, 236, 91, 0.521);
+  border-color: rgb(198, 241, 42);
+}
+.layaout-formulario {
+  background-color: rgba(17, 211, 137, 0.521);
+  border-color: rgb(3, 68, 38);
+}
+.span-css {
+  background-color: white;
+  border-bottom: 1px solid rgb(113, 145, 233);
+}
+.span-codigo {
+  background-color: white;
+
+  border-bottom: 1px solid rgb(198, 241, 42);
+}
+.span-formulario{
+  background-color: white;
+
+  border-bottom: 1px solid  rgb(3, 68, 38);
 }

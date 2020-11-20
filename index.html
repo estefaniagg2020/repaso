@@ -31,10 +31,14 @@
           </a>
         </ul>
       </nav>
-      <section>
-        <div class="formularios">
-          <h2>Formularios</h2>
-          <fieldset> <legend>Informacion general</legend>
+      <!-- Sección formulario -->
+      <section class="contenido-formulario">
+        <div class="formulario ">
+          <fieldset class="formularios layaout-formulario">
+            <legend class="titulo-formulario"> <span class="span-formulario">Formularios</span></legend>
+
+            <fieldset>
+              <legend class="">Informacion general</legend>
               <p>
                 Contenedor "FIELDSET", etiqueta al contenedor LEGEND. Campos
                 input/radio/select
@@ -44,9 +48,9 @@
                 Para alinear el label con el input sin usar flex o grid. Ponemos
                 label en inline-block y le damos un width
               </p>
-          </fieldset>
-          <form action="form">
-            <fieldset>
+            </fieldset>
+            <form action="form">
+              <fieldset>
                 <legend>Inputs</legend>
                 <div class="form-group">
                   <label for="name">Nombre</label>
@@ -60,9 +64,10 @@
                   <label for="email">Email</label>
                   <input type="email" id="email" name="email" />
                 </div>
-            </fieldset>
-            <!-- input checkbox -->
-            <fieldset> <legend>Checkbox</legend>
+              </fieldset>
+              <!-- input checkbox -->
+              <fieldset>
+                <legend>Checkbox</legend>
                 <div class="form-group">
                   <input type="checkbox" name="lenguaje" value="html" />HTML
                   <input
@@ -70,12 +75,17 @@
                     name="lenguaje"
                     value="javascript"
                   />Javascript
-                  <input type="checkbox" name="lenguaje" value="css" checked />CSS
-                  <input type="checkbox" name="lenguaje" value="xml" />XML
+                  <input
+                    type="checkbox"
+                    name="lenguaje"
+                    value="css"
+                    checked
+                  />CSS <input type="checkbox" name="lenguaje" value="xml" />XML
                 </div>
-            </fieldset>
-            <!-- Input Radio -->
-           <fieldset> <legend>Radio-Buttons</legend>
+              </fieldset>
+              <!-- Input Radio -->
+              <fieldset>
+                <legend>Radio-Buttons</legend>
                 <div class="form-group">
                   <input
                     type="radio"
@@ -90,13 +100,15 @@
                     name="edad"
                     checked
                   />18 a 30
-                  <input type="radio" id="31a50" value="31a50" name="edad" />31 a 50
-                  <input type="radio" id="mas50" value="mas50" name="edad" />Más de
-                  50
+                  <input type="radio" id="31a50" value="31a50" name="edad" />31
+                  a 50
+                  <input type="radio" id="mas50" value="mas50" name="edad" />Más
+                  de 50
                 </div>
-           </fieldset>
-            <!-- Select -->
-           <fieldset> <legend>Selects</legend>
+              </fieldset>
+              <!-- Select -->
+              <fieldset>
+                <legend>Selects</legend>
                 <div class="form-group">
                   <select name="ciudad">
                     <optgroup label="Europa">
@@ -116,9 +128,168 @@
                     </optgroup>
                   </select>
                 </div>
-           </fieldset>
-          </form>
+              </fieldset>
+            </form>
+          </fieldset>
         </div>
+        <div class="formulario formulario-codigo">
+          <fieldset class="codigo-formulario">
+            <legend class="titulo-formulario"><span class="span-codigo">Codigo formulario</span></legend>            
+            <fieldset> <legend>Inputs:</legend>
+                &lt;fieldset&gt;<br/>
+                &lt;legend&gt;Inputs&lt;/legend&gt;<br/>
+                &nbsp; &lt;div class="form-group"&gt;<br/>
+                &nbsp;&nbsp; &nbsp;&nbsp; &lt;label for="name"&gt;Nombre&lt;/label&gt;<br/>
+                &nbsp;&nbsp; &nbsp;&nbsp;&lt;input type="text" id="name" name="name" /&gt;<br/>
+                &nbsp; &lt;/div&gt;<br />
+                &nbsp; &lt;div class="form-group"&gt;<br />
+                &nbsp;&nbsp; &nbsp;&nbsp; &lt;label for="apellido"&gt;Apellidos&lt;/label&gt;<br/>
+                &nbsp;&nbsp; &lt;input type="text" id="apellido" name="apellido" /&gt;<br/>
+                &nbsp; &lt;/div&gt;<br/>
+                &nbsp;&lt;div class="form-group"&gt;<br/>
+                &nbsp;&nbsp; &nbsp;&nbsp;&lt;label for="email"&gt;Email&lt;/label&gt;<br/>
+                &nbsp;&nbsp; &nbsp;&nbsp;&lt;input type="email" id="email" name="email" /&gt;<br/>
+                &nbsp; &lt;/div&gt;<br/>
+                &lt;/fieldset&gt;<br/>
+            </fieldset>
+           <fieldset> <legend>Checkbox</legend>
+                &lt;fieldset&gt;<br>
+                    &lt;legend&gt;Checkbox&lt;/legend&gt;<br>
+                    &nbsp; &lt;div class="form-group"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;  &lt;input type="checkbox" <br>&nbsp;&nbsp;&nbsp;&nbsp;name="lenguaje" <br>&nbsp;&nbsp;&nbsp;&nbsp; value="html"/&gt;HTML<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input&gt;
+                        type="checkbox"
+                        name="lenguaje"
+                        value="javascript"
+                      /&gt; Javascript
+                      &nbsp;&nbsp;&nbsp;&nbsp;  <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input&gt;
+                     <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="checkbox"
+                      <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name="lenguaje"
+                      <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value="css"
+                      <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;checked
+                      /&gt; CSS<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;input &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="checkbox" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name="lenguaje"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; value="xml" /&gt;XML<br>
+                      &nbsp; &lt;/div&gt; <br>
+                  &lt;/fieldset&gt; <br>
+                 
+                </fieldset>
+                 <fieldset> <legend>Radio-Butons</legend>
+                      &lt;fieldset&gt; <br>
+                        &lt;legend&gt; <br>Radio-Buttons&lt;/legend&gt; <br>
+                        &lt;div class="form-group"&gt; <br>
+                          &lt;input
+                            type="radio"
+                            id="menos18"
+                            value="menos18"
+                            name="edad"
+                          /&gt; <br>Menos de 18
+                          &lt;input
+                            type="radio"
+                            id="18a30"
+                            value="18a30"
+                            name="edad"
+                            checked
+                          /&gt; <br>18 a 30
+                          &lt;input type="radio" id="31a50" value="31a50" name="edad" /&gt; <br>31
+                          a 50
+                          &lt;input type="radio" id="mas50" value="mas50" name="edad" /&gt; <br>Más
+                          de 50
+                        &lt;/div&gt; <br>
+                      &lt;/fieldset&gt; <br>
+                 </fieldset>           
+             
+             <fieldset> <legend> Select</legend>
+                  &lt;fieldset&gt; <br>
+                    &lt;legend&gt; <br>Selects&lt;/legend&gt; <br>
+                    &lt;div class="form-group"&gt; <br>
+                      &lt;select name="ciudad"&gt; <br>
+                        &lt;optgroup label="Europa"&gt; <br>
+                          &lt;option&gt; <br>Madrid&lt;/option&gt; <br>
+                          &lt;option&gt; <br>Londres&lt;/option&gt; <br>
+                          &lt;option&gt; <br>Paris&lt;/option&gt; <br>
+                        &lt;/optgroup&gt; <br>
+                        &lt;optgroup label="Suramerica"&gt; <br>
+                          &lt;option&gt; <br>Santiago&lt;/option&gt; <br>
+                          &lt;option&gt; <br>Sao Paulo&lt;/option&gt; <br>
+                          &lt;option&gt; <br>Lima&lt;/option&gt; <br>
+                          &lt;option&gt; <br>Bogota&lt;/option&gt; <br>
+                        &lt;/optgroup&gt; <br>
+                        &lt;optgroup label="Africa"&gt; <br>
+                          &lt;option&gt; <br>Casablanca&lt;/option&gt; <br>
+                          &lt;option&gt; <br>Ciudad del Cabo&lt;/option&gt; <br>
+                        &lt;/optgroup&gt; <br>
+                      &lt;/select&gt; <br>
+                    &lt;/div&gt; <br>
+                    &lt;/fieldset&gt; <br>
+             </fieldset>
+           
+          </fieldset>
+        </div>
+        <div class="formulario ">
+            <fieldset class="formulario-css"> <legend class="titulo-formulario"><span class="span-css">Css</span> </legend>
+                <fieldset><legend>Inline</legend>
+                    label {<br>
+                        display: inline-block; <br>
+                        width: 80px; <br>
+                        text-align: left;<br>
+                      }
+                
+                </fieldset>
+                <fieldset><legend>Flex-box</legend>
+                    <p>Clases usadas en la practica formulario</p>
+                    .flex,(claseFlex)<br>
+                    .datos .flex-form {<br>
+                      display: flex;<br>
+                    }<br>
+                    .flex-form, .flex
+                    {<br>
+                      align-self: center;<br>
+                      align-items: baseline;<br>
+                    }<br>
+                  
+                    .radio-span,
+                    .checkbox-span,
+                    .input-span,
+                    .select {<br>
+                      flex: 4 1 0;<br>
+                    }<br>
+                  
+                    .datos input, .datos label {<br>
+                      width: 100%;<br>
+                     
+                    }<br>
+                    .label-span {<br>
+                      text-align: right;<br>
+                      margin-right: 5px;<br>
+                      
+                    }<br>
+                    .label-alineada {<br>
+                      align-self: center;  <br>  
+                    }
+                    <br>
+                    .label-span .label-mezcla
+                    {<br>
+                      width: 100%;  <br> 
+                      align-self: baseline;<br>
+                        
+                      vertical-align: middle;<br>
+                
+                </fieldset>
+                <fieldset><legend>grid</legend>
+                    .contendor {<br>
+                        display: grid; <br>
+                        grid-template-columns: repeat(2, fr); <br>
+                        
+                      }
+                
+                </fieldset>
+            </fieldset>
+        </div>
+      </section>
+      <!-- fin seccion formulario -->
+      <!-- Seccion tipos de letra -->
+      <section>
+        <h2>Unidades absolutas</h2>
+        <h2>Unidades relativas</h2>
       </section>
     </div>
   </body>
