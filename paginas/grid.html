@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/estilo-grid.css" />
+    <link rel="stylesheet" href="../estilos/estilo-formulario.css" />
+    <link rel="stylesheet" href="../estilo.css" />
+    <!-- letra -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- icono -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body id="body">
+    <div class="icono-arriba">
+        <a href="#body" class="icono-arriba"><i class="fas fa-3x fa-arrow-alt-circle-up "></i></a>
+    </div>
+    <div class="icono-atras">
+        <a href="../index.html"><i class="fas fa-3x fa-arrow-circle-left"></i></a>
+    </div>
+
+    <h1> Grid Layout</h1>
+    <div class="contenedor">
+
+        <div class="example">
+
+            <div class="header">
+                Header
+            </div>
+            <div class="nav">
+                Menú
+            </div>
+            <div class="section">
+                Sección Central
+            </div>
+            <div class="aside">
+                Aside Lateral
+            </div>
+            <div class="footer">
+                Pié de Página
+            </div>
+    
+        </div>
+        <div class="html-description">
+            <pre>
+                <br>
+                &lt;div <span>class="example"</span>&gt;
+                    &lt;div <span>class="header"</span>&gt;
+                        Header
+                    &lt;/div>
+                    <br>
+                    &lt;div <span>class="nav"</span>&gt;
+                        Menú
+                    &lt;/div>
+                    <br>
+                    &lt;div <span>class="section"</span>&gt;
+                        Sección Central
+                    &lt;/div>
+                    <br>
+                    &lt;div <span>class="aside"</span>&gt;
+                        Aside Lateral
+                    &lt;/div>
+                    <br>
+                    &lt;div <span>class="footer"</span>&gt;
+                        Pié de Página
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </pre>
+        </div>
+        <div class="code-description">
+            <pre>
+                <span>.header</span>{
+                    grid-area: header;
+                }
+                <span>.nav</span>{
+                    grid-area: nav;
+                }
+                <span>.section</span>{
+                    grid-area: section;
+                }
+                <span>.aside</span>{
+                    grid-area: aside;
+                }
+                <span>.footer</span>{
+                    grid-area: footer;
+                }
+                
+                <span>.example</span>{
+                    grid-area: example;
+                    display: grid;
+                    grid-template-columns:  1fr;
+                    grid-template-rows: auto;
+                    grid-template-areas: 
+                        "header header"
+                        "nav nav"
+                        "section aside"
+                        "footer footer";
+                }
+                
+            </pre>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+
+  </body>
+</html>
