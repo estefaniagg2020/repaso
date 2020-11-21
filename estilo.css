@@ -27,12 +27,14 @@ input[type="button"]
   border: none;
   border-bottom: 1px solid grey;
 }
+/* Icono flecha */
 .icono-arriba{
   position: fixed;
   bottom: 20px;
   right: 20px;
   
 }
+/* color flecha icono */
 i{
   color: rgb(105, 101, 101);
 }
