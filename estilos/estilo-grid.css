@@ -24,10 +24,10 @@
     grid-template-columns:  1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "header header header header"
-        "nav nav nav nav"
-        "section section section aside"
-        "footer footer footer footer";
+        "header header "
+        "nav nav "
+        "section  aside"
+        "footer footer";
 
 
     padding: 10px;
