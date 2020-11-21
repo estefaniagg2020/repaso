@@ -1,0 +1,84 @@
+.contenedor-formulario {
+  font-family: Helvetica;
+}
+/*elemntos pagina*/
+.contenedor
+{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: 1fr 1fr;
+    
+}
+.contenedor-formulario, .codigo-formulario, .css-formulario {
+  padding: 20px; 
+}
+.contenedor-formulario{
+    background-color: rgb(238, 243, 170);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.codigo-formulario{
+    background-color: lightpink;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.css-formulario{
+    background-color: lightgreen;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/* alineacion formulario */
+
+.form-group {
+  display: flex;
+  margin-bottom: 5px;
+}
+fieldset
+{
+   border: none;
+   
+   padding-top: 25px;
+}
+legend
+{
+   text-align: center; 
+}
+.input {
+  flex: 4 1 0;
+}
+input {
+  width: 97%;
+  height: 20px;
+}
+select{
+    width: 100%;
+    height: 25px;
+}
+label {
+  justify-content: flex-end;
+  margin-right: 10px;
+  display: inline-flex;
+  width: 120px;
+}
+span{
+    color: rgb(94, 92, 92);
+}
+
+/* informacion adicional */
+h3{
+    text-align: center;
+    font-size: 1.5em;
+}
+.informacion
+{  display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid #ccc;  
+    padding: 5px;
+    background-color: thistle;   
+    padding: 15px;
+}
+.contenido-informacion
+{
+    border: 1px solid rgba(94, 92, 92, 0.185);   
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 15px;
+}

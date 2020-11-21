@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../estilo.css" />
+    <link rel="stylesheet" href="../estilos/estilo-flex.css" />
+    <title>Document</title>
+
+    <!-- icono -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body id="body">
+    <div class="icono-arriba">
+      <a href="#body" class="icono-arriba"
+        ><i class="fas fa-3x fa-arrow-alt-circle-up"></i
+      ></a>
+    </div>
+    <div class="icono-atras">
+      <a href="../index.html"><i class="fas fa-2x fa-arrow-circle-left"></i></a>
+    </div>
+    <h1>Flex-box</h1>
+    <div class="contenedor">
+      <div class="contenedor-formulario">
+        <form action="" name="form">
+          <fieldset>
+            <legend>Datos de envio</legend>
+            <div class="form-group">
+              <div class="label">
+                <label for="name">Nombre</label>
+              </div>
+              <div class="input">
+                <input type="text" id="name" name="name" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="label">
+                <label for="email">Email</label>
+              </div>
+              <div class="input">
+                <input type="text" id="email" name="email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="label">
+                <label for="adress">Dirección</label>
+              </div>
+              <div class="input">
+                <input type="text" id="adress" name="adress" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="label">
+                <label for="ciudad">Ciudad</label>
+              </div>
+              <div class="input">
+                <input type="text" id="ciudad" name="ciudad" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="label">
+                <label for="pais">Pais</label>
+              </div>
+              <div class="input">
+                <input type="text" id="pais" name="pais" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="label">
+                <label for="cp">Código Postal</label>
+              </div>
+              <div class="input">
+                <input type="text" id="cp" name="cp" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="label">
+                <label for="select">Seleccion</label>
+              </div>
+              <div class="input">
+                <select name="select" id="select">
+                  <option value="opcion1">opcion1</option>
+                  <option value="opcion2">opcion2</option>
+                  <option value="opcion3">opcion3</option>
+                  <option value="opcion4">opcion4</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="codigo-formulario">
+        <p>
+          Codigo solo de un grupo, se debe aplicar a todos los grupos
+          label-inputs
+        </p>
+        <pre>
+        &lt;fieldset&gt;
+          &lt;legend&gt;Datos de envio&lt;/legend&gt;
+          &lt;div class="form-group"&gt;<span>clase que agrupa label-input. Debe estar en display:flex</span>
+            &lt;div class="label"&gt;<span>div para label</span>
+              &lt;label for="name"&gt;Nombre&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="input"&gt;<span>div para input. </span>
+              &lt;input type="text" id="name" name="name" /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/fieldset&gt;
+        &lt;!--Select--&gt;
+        &lt;div class="form-group"&gt;
+            &lt;div class="label"&gt;
+              &lt;label for="select"&gt;Seleccion&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="input"&gt;
+              &lt;select name="select" id="select"&gt;
+                  &lt;option value="opcion1"&gt;opcion1&lt;/option&gt;
+                  &lt;option value="opcion2"&gt;opcion2&lt;/option&gt;
+                  &lt;option value="opcion3"&gt;opcion3&lt;/option&gt;
+                  &lt;option value="opcion4"&gt;opcion4&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+       </pre>
+      </div>
+      <div class="css-formulario">
+        <pre>
+           
+            .form-group {
+                display: flex;
+                margin-bottom: 5px;
+            }
+
+            fieldset
+            {
+                border: none;                
+                padding-top: 25px;
+            } 
+
+            .input {
+                flex: 4 1 0;
+            }
+
+            input {
+                width: 97%;
+            }
+
+            select{
+                width: 100%
+            }
+
+            label {
+                justify-content: flex-end;
+                margin-right: 10px;
+                display: inline-flex;
+                width: 120px;
+            }
+  
+          </pre
+        >
+      </div>
+    </div> <h2>Informacion</h2>
+    <div class="informacion">
+       
+      <div class="contenido-informacion">
+        <h3>Flex direction</h3>
+        <p>Row <i class="fas fa-arrow-right"></i> Alineacion en fila.</p>
+        <p>Column <i class="fas fa-arrow-right"></i>Alineacion en vertical.</p>
+      </div>
+
+      <div class="contenido-informacion">
+        <h3>flex-wrap</h3>
+        <p>Permite que si el contenido no cabe se posicione debajo</p>
+        <p>nowrap - wrap</p>
+      </div>
+
+      <div class="contenido-informacion">
+        <h3>justify-content</h3>
+        <p>Alineacion horizontal con respecto al contendor</p>
+        <p>
+          flex-start - flex-end - center - space-between - space-around -
+          space-evently
+        </p>
+        <p>
+          **Las tres últimas se parecen, la diferencia es el espacio que hay
+          entre los elementos.
+        </p>
+      </div>
+
+      <div class="contenido-informacion">
+        <h3>Align-items</h3>
+        <p>Alineacion vertical con respecto al contendor</p>
+        <p>
+          flex-start - flex-end - center - strech(ocupa todo el alto, debe tener
+          un height) - baseline(crea una linea imaginaria bajo el contenido
+          escrito)
+        </p>
+      </div>
+
+      <div class="contenido-informacion">
+        <h3>Order</h3>
+        <p>Se le pone a los objetos, y permite cambiar su distribucion</p>
+      </div>
+
+      <div class="contenido-informacion">
+        <h3>align-self</h3>
+        <p>Se le pone a los objetos, y permite alinearnos verticalmente</p>
+      </div>
+    </div>
+  </body>
+</html>
