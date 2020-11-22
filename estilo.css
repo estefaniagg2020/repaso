@@ -36,7 +36,7 @@ input[type="button"]
 }
 /* color flecha icono */
 i{
-  color: rgb(105, 101, 101);
+  color: rgba(105, 101, 101, 0.541);
 }
 .imagenes{
  margin: 0 auto;
