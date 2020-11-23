@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="../estilos/estilo-formulario.css" />
     <link rel="stylesheet" href="../estilo.css" />
     <!-- letra -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
     <!-- icono -->
     <link
       rel="stylesheet"
@@ -19,20 +22,23 @@
   </head>
   <body id="body">
     <div class="icono-arriba">
-      <a href="#body" class="icono-arriba"><i class="fas fa-3x fa-arrow-alt-circle-up "></i></a>
+      <a href="#body" class="icono-arriba"
+        ><i class="fas fa-3x fa-arrow-alt-circle-up"></i
+      ></a>
     </div>
     <div class="icono-atras">
       <a href="../index.html"><i class="fas fa-3x fa-arrow-circle-left"></i></a>
     </div>
     <div class="pagina-pedro">
-      <a href="https://pedroprieto.github.io/post/disenyo_formularios/">Enlace página Pedro</a>
+      <a href="https://pedroprieto.github.io/post/disenyo_formularios/"
+        >Enlace página Pedro</a
+      >
     </div>
     <section class="contenido-formulario">
       <div class="formulario">
         <fieldset class="formularios layaout-formulario">
           <legend class="titulo-formulario">
             <span class="span-formulario">Formularios</span>
-           
           </legend>
 
           <fieldset>
@@ -51,76 +57,109 @@
             <fieldset>
               <legend>Inputs</legend>
               <div class="form-group">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" />
+                <div class="label">
+                  <label for="name">Nombre</label>
+                </div>
+                <div class="input">
+                  <input type="text" id="name" name="name" />
+                </div>
               </div>
               <div class="form-group">
-                <label for="apellido">Apellidos</label>
-                <input type="text" id="apellido" name="apellido" />
+                <div class="label">
+                  <label for="apellido">Apellidos</label>
+                </div>
+                <div class="input">
+                  <input type="text" id="apellido" name="apellido" />
+                </div>
               </div>
               <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" />
+                <div class="label">
+                  <label for="email">Email</label>
+                </div>
+                <div class="input">
+                  <input type="email" id="email" name="email" />
+                </div>
               </div>
             </fieldset>
             <!-- input checkbox -->
             <fieldset>
               <legend>Checkbox</legend>
-              <div class="form-group">
-                <input type="checkbox" name="lenguaje" value="html" />HTML
-                <input
-                  type="checkbox"
-                  name="lenguaje"
-                  value="javascript"
-                />Javascript
-                <input type="checkbox" name="lenguaje" value="css" checked />CSS
-                <input type="checkbox" name="lenguaje" value="xml" />XML
+              <div class="form-group form-group-seleccion">
+                <div class="input">
+                  <input type="checkbox" name="lenguaje" value="html" />
+                </div>
+                HTML
+                <div class="input">
+                  <input type="checkbox" name="lenguaje" value="javascript" />
+                </div>
+                Javascript
+                <div class="input">
+                  <input type="checkbox" name="lenguaje" value="css" checked />
+                </div>
+                CSS
+                <div class="input">
+                  <input type="checkbox" name="lenguaje" value="xml" />
+                </div>
+                XML
               </div>
             </fieldset>
             <!-- Input Radio -->
             <fieldset>
               <legend>Radio-Buttons</legend>
-              <div class="form-group">
-                <input
-                  type="radio"
-                  id="menos18"
-                  value="menos18"
-                  name="edad"
-                />Menos de 18
-                <input
-                  type="radio"
-                  id="18a30"
-                  value="18a30"
-                  name="edad"
-                  checked
-                />18 a 30
-                <input type="radio" id="31a50" value="31a50" name="edad" />31 a
-                50
-                <input type="radio" id="mas50" value="mas50" name="edad" />Más
-                de 50
+              <div class="form-group form-group-seleccion">
+                <div class="input">
+                  <input
+                    type="radio"
+                    id="menos18"
+                    value="menos18"
+                    name="edad"
+                  />
+                </div>
+                Menos de 18
+                <div class="input">
+                  <input
+                    type="radio"
+                    id="18a30"
+                    value="18a30"
+                    name="edad"
+                    checked
+                  />
+                </div>
+                18 a 30
+                <div class="input">
+                  <input type="radio" id="31a50" value="31a50" name="edad" />
+                </div>
+                31 a 50
+                <div class="input">
+                  <input type="radio" id="mas50" value="mas50" name="edad" />
+                </div>
+                Más de 50
               </div>
             </fieldset>
             <!-- Select -->
             <fieldset>
               <legend>Selects</legend>
               <div class="form-group">
-                <select name="ciudad">
-                  <optgroup label="Europa">
-                    <option>Madrid</option>
-                    <option>Londres</option>
-                    <option>Paris</option>
-                  </optgroup>
-                  <optgroup label="Suramerica">
-                    <option>Santiago</option>
-                    <option>Sao Paulo</option>
-                    <option>Lima</option>
-                    <option>Bogota</option>
-                  </optgroup>
-                  <optgroup label="Africa">
-                    <option>Casablanca</option>
-                    <option>Ciudad del Cabo</option>
-                  </optgroup>
-                </select>
+                <div class="label"><label for="select">Selecciona:</label></div>
+                <div class="input">
+                  <select name="ciudad" id="select">
+                    <optgroup label="Europa">
+                      <option>Madrid</option>
+                      <option>Londres</option>
+                      <option>Paris</option>
+                    </optgroup>
+                    <optgroup label="Suramerica">
+                      <option>Santiago</option>
+                      <option>Sao Paulo</option>
+                      <option>Lima</option>
+                      <option>Bogota</option>
+                    </optgroup>
+                    <optgroup label="Africa">
+                      <option>Casablanca</option>
+                      <option>Ciudad del Cabo</option>
+                    </optgroup>
+                  </select>
+                </div>
               </div>
             </fieldset>
           </form>
@@ -133,92 +172,117 @@
           </legend>
           <fieldset>
             <legend>Inputs:</legend>
-            <strong>&lt;fieldset&gt; </strong><br />
-            <strong>&lt;legend&gt; </strong>Inputs<strong>&lt;/legend&gt; </strong><br />
-            &nbsp; <strong>&lt;div class="form-group"&gt; </strong><br />
-            &nbsp;&nbsp; &nbsp;&nbsp; <strong>&lt;label
-            for="name"&gt; </strong>Nombre<strong>&lt;/label&gt; </strong><br />
-            &nbsp;&nbsp; &nbsp;&nbsp;<strong>&lt;input type="text" id="name" name="name"
-            /&gt; </strong><br />
-            &nbsp; <strong>&lt;/div&gt; </strong><br />
-            &nbsp; <strong>&lt;div class="form-group"&gt; </strong><br />
-            &nbsp;&nbsp; &nbsp;&nbsp; <strong>&lt;label
-            for="apellido"&gt; </strong>Apellidos<strong>&lt;/label&gt; </strong><br />
-            &nbsp;&nbsp; <strong>&lt;input type="text" id="apellido" name="apellido"
-            /&gt; </strong><br />
-            &nbsp; <strong>&lt;/div&gt; </strong><br />
-            &nbsp;<strong>&lt;div class="form-group"&gt; </strong><br />
-            &nbsp;&nbsp; &nbsp;&nbsp;<strong>&lt;label
-            for="email"&gt; </strong>Email<strong>&lt;/label&gt; </strong><br />
-            &nbsp;&nbsp; &nbsp;&nbsp;<strong>&lt;input type="email" id="email"
-            name="email" /&gt; </strong><br />
-            &nbsp; <strong>&lt;/div&gt; </strong><br />
-            <strong>&lt;/fieldset&gt; </strong><br />
+            <pre>
+           &lt;div class="form-group"&gt;
+             &lt;div class="label"&gt;
+                &lt;label for="name"&gt;Nombre&gt;/label&gt;
+             &lt;/div&gt;
+              &lt;div class="input"&gt;
+                &lt;input type="text" id="name" name="name" /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+              &lt;div class="label"&gt;
+                &lt;label for="apellido"&gt;Apellidos&gt;/label&gt;
+              &lt;/div&gt;
+              &lt;div class="input"&gt;
+                &lt;input type="text" id="apellido" name="apellido" /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+            &lt;div class="label"&gt;
+                &lt;label for="email"&gt;Email&gt;/label&gt;
+            &lt;/div&gt;
+              &lt;div class="input"&gt;
+                &lt;input type="email" id="email" name="email" /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </pre
+            >
           </fieldset>
           <div class="vacio"></div>
           <fieldset>
             <legend>Checkbox</legend>
-            <strong>&lt;fieldset&gt; </strong><br />
-            <strong>&lt;legend&gt; </strong>Checkbox<strong>&lt;/legend&gt; </strong><br />
-            &nbsp; <strong>&lt;div class="form-group"&gt; </strong><br />
-            &nbsp;&nbsp;&nbsp;&nbsp; <strong>&lt;input type="checkbox"
-            <br />&nbsp;&nbsp;&nbsp;&nbsp;name="lenguaje"
-            <br />&nbsp;&nbsp;&nbsp;&nbsp; value="html"/&gt; </strong>HTML<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;input&gt; </strong> type="checkbox"
-            name="lenguaje" value="javascript" /&gt; </strong> Javascript
-            &nbsp;&nbsp;&nbsp;&nbsp; <br />&nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;input&gt; </strong>
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="checkbox" <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name="lenguaje" <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value="css" <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;checked /&gt; </strong> CSS<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;input
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="checkbox"
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name="lenguaje"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            value="xml" /&gt; </strong>XML<br />
-            &nbsp; <strong>&lt;/div&gt; </strong> <br />
-            <strong>&lt;/fieldset&gt; </strong> <br />
+            <pre>
+              &lt;div class="form-group"&gt;
+                &lt;div class="input"&gt;
+                   &lt;input type="checkbox" name="lenguaje" value="html"/&gt;
+                &lt;/div&gt;HTML
+                 &lt;div class="input"&gt;&lt;input
+                   type="checkbox"
+                   name="lenguaje"
+                   value="javascript"
+                 /&gt;
+               &lt;/div&gt;Javascript
+                 &lt;div class="input"&gt;
+                   &lt;input type="checkbox" name="lenguaje" value="css" checked/&gt;
+                 &lt;/div&gt;CSS
+                 &lt;div class="input"&gt;
+                   &lt;input type="checkbox" name="lenguaje" value="xml"/&gt;
+                 &lt;/div&gt;XML
+               &lt;/div&gt;
+            </pre>
           </fieldset>
           <div class="vacio"></div>
           <fieldset>
             <legend>Radio-Butons</legend>
-            <strong>&lt;fieldset&gt; </strong> <br />
-            <strong>&lt;legend&gt; </strong> <br />Radio-Buttons<strong>&lt;/legend&gt; </strong> <br />
-            <strong>&lt;div class="form-group"&gt; </strong> <br />
-            <strong>&lt;input type="radio" id="menos18" value="menos18" name="edad"
-            /&gt; </strong> <br />Menos de 18 <strong>&lt;input type="radio" id="18a30"
-            value="18a30" name="edad" checked /&gt; </strong> <br />18 a 30 <strong>&lt;input
-            type="radio" id="31a50" value="31a50" name="edad" /&gt; </strong> <br />31 a
-            50 <strong>&lt;input type="radio" id="mas50" value="mas50" name="edad" /&gt; </strong>
-            <br />Más de 50 <strong>&lt;/div&gt; </strong> <br />
-            <strong>&lt;/fieldset&gt; </strong> <br />
+            <pre>
+              &lt;div class="form-group"&gt;
+                &lt;div class="input"&gt;&lt;input
+                  type="radio"
+                  id="menos18"
+                  value="menos18"
+                  name="edad"
+                /&gt;&lt;/div&gt;Menos de 18
+                &lt;div class="input"&gt;&lt;input
+                  type="radio"
+                  id="18a30"
+                  value="18a30"
+                  name="edad"
+                  checked
+                /&gt;
+                &lt;/div&gt;18 a 30
+                &lt;div class="input"&gt;&lt;input 
+                  type="radio" 
+                  id="31a50" 
+                  value="31a50"
+                  name="edad" /&gt;&lt;/div&gt;31 a 50
+                &lt;div class="input"&gt;&lt;input 
+                  type="radio" 
+                  id="mas50" 
+                  value="mas50"
+                  name="edad" /&gt;&lt;/div&gt;Más de 50
+              &lt;/div&gt;
+            </pre>
           </fieldset>
           <div class="vacio"></div>
 
           <fieldset>
             <legend>Select</legend>
-            &lt;fieldset&gt; <br />
-            &lt;legend&gt; <br />Selects&lt;/legend&gt; <br />
-            &lt;div class="form-group"&gt; <br />
-            &lt;select name="ciudad"&gt; <br />
-            &lt;optgroup label="Europa"&gt; <br />
-            &lt;option&gt; <br />Madrid&lt;/option&gt; <br />
-            &lt;option&gt; <br />Londres&lt;/option&gt; <br />
-            &lt;option&gt; <br />Paris&lt;/option&gt; <br />
-            &lt;/optgroup&gt; <br />
-            &lt;optgroup label="Suramerica"&gt; <br />
-            &lt;option&gt; <br />Santiago&lt;/option&gt; <br />
-            &lt;option&gt; <br />Sao Paulo&lt;/option&gt; <br />
-            &lt;option&gt; <br />Lima&lt;/option&gt; <br />
-            &lt;option&gt; <br />Bogota&lt;/option&gt; <br />
-            &lt;/optgroup&gt; <br />
-            &lt;optgroup label="Africa"&gt; <br />
-            &lt;option&gt; <br />Casablanca&lt;/option&gt; <br />
-            &lt;option&gt; <br />Ciudad del Cabo&lt;/option&gt; <br />
-            &lt;/optgroup&gt; <br />
-            &lt;/select&gt; <br />
-            &lt;/div&gt; <br />
-            &lt;/fieldset&gt; <br />
+            <pre>
+              &lt;div class="form-group"&gt;
+                &lt;div class="label"&gt;&lt;label for="select"&gt;Selecciona:&lt;/label&gt;&lt;/div&gt;
+                &lt;div class="input"&gt;
+                  &lt;select name="ciudad" id="select"&gt;
+                    &lt;optgroup label="Europa"&gt;
+                      &lt;option&gt;Madrid&lt;/option&gt;
+                      &lt;option&gt;Londres&lt;/option&gt;
+                      &lt;option&gt;Paris&lt;/option&gt;
+                    &lt;/optgroup&gt;
+                    &lt;optgroup label="Suramerica"&gt;
+                      &lt;option&gt;Santiago&lt;/option&gt;
+                      &lt;option&gt;Sao Paulo&lt;/option&gt;
+                      &lt;option&gt;Lima&lt;/option&gt;
+                      &lt;option&gt;Bogota&lt;/option&gt;
+                    &lt;/optgroup&gt;
+                    &lt;optgroup label="Africa"&gt;
+                      &lt;option&gt;Casablanca&lt;/option&gt;
+                      &lt;option&gt;Ciudad del Cabo&lt;/option&gt;
+                    &lt;/optgroup&gt;
+                  &lt;/select&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </pre>
           </fieldset>
         </fieldset>
       </div>
@@ -238,47 +302,62 @@
           <div class="vacio"></div>
           <fieldset>
             <legend>Flex-box</legend>
-            <p>Clases usadas en la practica formulario</p>
-            .flex,(claseFlex)<br />
-            .datos .flex-form {<br />
-            display: flex;<br />
-            }<br />
-            .flex-form, .flex {<br />
-            align-self: center;<br />
-            align-items: baseline;<br />
-            }<br />
-
-            .radio-span, .checkbox-span, .input-span, .select {<br />
-            flex: 4 1 0;<br />
-            }<br />
-
-            .datos input, .datos label {<br />
-            width: 100%;<br />
-
-            }<br />
-            .label-span {<br />
-            text-align: right;<br />
-            margin-right: 5px;<br />
-
-            }<br />
-            .label-alineada {<br />
-            align-self: center; <br />
+            <pre>
+            .form-group {
+              margin: 5px;
+              display: flex;
+              justify-content: row;
             }
-            <br />
-            .label-span .label-mezcla {<br />
-            width: 100%; <br />
-            align-self: baseline;<br />
-
-            vertical-align: middle;<br />
+            .label <span>Contenedor para label</span>
+            {
+              flex: 1 1 0;
+              text-align: right;
+              margin-right: 20px;
+              
+            }
+            .input <span>contendor para input</span>
+            {
+              flex: 2 1 0;
+            
+            }
+            .input input{
+              width: 100%;
+            }
+          </pre>
           </fieldset>
           <div class="vacio"></div>
           <fieldset>
             <legend>grid</legend>
-            .contendor {<br />
-            display: grid; <br />
-            grid-template-columns: repeat(2, fr); <br />
-
-            }
+            <pre>
+              
+                  .layaout-formulario fieldset
+                  {
+                    display: grid;
+                  
+                  }
+                  .layaout-formulario legend
+                  {
+                    justify-self: start;
+                  }                  
+                  .form-group {
+                    justify-self: self-start;
+                    margin: 5px;
+                    display: grid;
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 1fr 1fr;
+                    justify-content: center;
+                  }
+                  .label
+                  {  
+                    text-align: right;
+                    margin-right: 5px;                    
+                  }
+                  .form-group-seleccion{
+                    display: grid;
+                    grid-template-rows: 1fr;
+                    grid-template-columns:repeat(8, 1fr);                    
+                  }
+            </pre>
           </fieldset>
         </fieldset>
       </div>
