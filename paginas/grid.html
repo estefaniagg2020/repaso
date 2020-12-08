@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="../estilos/estilo-formulario.css" />
     <link rel="stylesheet" href="../estilo.css" />
     <!-- letra -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
     <!-- icono -->
     <link
       rel="stylesheet"
@@ -20,36 +23,25 @@
   </head>
   <body id="body">
     <div class="icono-arriba">
-        <a href="#body" class="icono-arriba"><i class="fas fa-3x fa-arrow-alt-circle-up "></i></a>
+      <a href="#body" class="icono-arriba"
+        ><i class="fas fa-3x fa-arrow-alt-circle-up"></i
+      ></a>
     </div>
     <div class="icono-atras">
-        <a href="../index.html"><i class="fas fa-3x fa-arrow-circle-left"></i></a>
+      <a href="../index.html"><i class="fas fa-3x fa-arrow-circle-left"></i></a>
     </div>
 
-    <h1> Grid Layout</h1>
+    <h1>Grid Layout</h1>
     <div class="contenedor">
-
-        <div class="example">
-
-            <div class="header">
-                Header
-            </div>
-            <div class="nav">
-                Menú
-            </div>
-            <div class="section">
-                Sección Central
-            </div>
-            <div class="aside">
-                Aside Lateral
-            </div>
-            <div class="footer">
-                Pié de Página
-            </div>
-    
-        </div>
-        <div class="html-description">
-            <pre>
+      <div class="example">
+        <div class="header">Header</div>
+        <div class="nav">Menú</div>
+        <div class="section">Sección Central</div>
+        <div class="aside">Aside Lateral</div>
+        <div class="footer">Pié de Página</div>
+      </div>
+      <div class="html-description">
+        <pre>
                 <br>
                 &lt;div <span>class="example"</span>&gt;
                     &lt;div <span>class="header"</span>&gt;
@@ -73,9 +65,9 @@
                     &lt;/div&gt;
                 &lt;/div&gt;
             </pre>
-        </div>
-        <div class="code-description">
-            <pre>
+      </div>
+      <div class="code-description">
+        <pre>
                 <span>.header</span>{
                     grid-area: header;
                 }
@@ -104,11 +96,55 @@
                         "footer footer";
                 }
                 
-            </pre>
-        </div>
-        <div class="clear"></div>
+            </pre
+        >
+      </div>
+      <div class="clear"></div>
     </div>
-    
+    <div class="informacion">
+      <div class="contenido-informacion">
+        <h3>Grid repeat</h3>
+        <p>Permite indicar cuántas filas o columnas quieres con el mismo valor</p>
+        <p><pre>
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows:repeat(4,1fr);
+        </pre></p> 
+          <p>
+              Hará 4 columnas de una fracción cada una y 4 filas
+        </p>
+        
+      </div>
 
+      
+
+      <div class="contenido-informacion">
+        <h3>Justify-content</h3>
+        <p>Alineacion horizontal con respecto al contendor</p>
+       
+      </div>
+
+      <div class="contenido-informacion">
+        <h3>Align-items/content</h3>
+        <p>Alineacion vertical con respecto al contendor</p>
+        <p>
+          Para alinear los elementos de dentro es mejor ponerle a cada elemento display grid, align-content center.
+        </p>
+      </div>
+
+      <div class="contenido-informacion">
+        <h3>Espacio a ocupar</h3>
+        <p>grid-columns: 2/4 le indicamos que empiece en la columna dos y acabe en la 4. Es igual a 
+        <pre>
+            grid-columns-start:2;
+            grid-columns-end:4;
+         </pre> 
+        </p>
+      </div>
+
+      <div class="contenido-informacion">
+        <h3>Align-self</h3>
+        <p>Se le pone a los objetos, y permite alinearnos verticalmente</p>
+      </div>
+    </div>
   </body>
 </html>
